@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0081ff;
+  --color-brand-dark: #001b3d;
+  --color-brand-light: #f0f7ff;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-brand-dark bg-white antialiased;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+  }
+  
+  .max-content {
+    @apply max-w-7xl mx-auto px-6;
+  }
+  
+  .btn-primary {
+    @apply bg-brand-dark text-white px-8 py-3 rounded-full font-bold transition-all hover:bg-brand-dark/90 active:scale-95;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-white text-white px-8 py-3 rounded-full font-bold transition-all hover:bg-white hover:text-brand-blue active:scale-95;
+  }
+
+  .nav-link {
+    @apply text-sm font-bold uppercase tracking-wider text-white/80 hover:text-white transition-colors;
+  }
+}
