@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Product from './pages/Product';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import Home from './Home';
+import Product from './Product';
+import About from './About';
+import Contact from './Contact';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function App() {
